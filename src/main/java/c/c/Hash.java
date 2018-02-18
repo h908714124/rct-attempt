@@ -6,7 +6,7 @@ import org.bouncycastle.math.ec.ECPoint;
 
 import java.math.BigInteger;
 
-public class Hash {
+public final class Hash {
 
   private final KeccakDigest keccak;
 

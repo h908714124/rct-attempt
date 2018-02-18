@@ -4,7 +4,7 @@ import org.bouncycastle.math.ec.ECPoint;
 
 import java.math.BigInteger;
 
-class SigStep {
+final class SigStep {
 
   private final ECPoint Li;
   private final ECPoint Ri;
@@ -16,15 +16,15 @@ class SigStep {
     this.cppi = cppi;
   }
 
-  public ECPoint Li() {
+  ECPoint Li() {
     return Li;
   }
 
-  public ECPoint Ri() {
+  ECPoint Ri() {
     return Ri;
   }
 
-  public BigInteger cppi() {
+  BigInteger cppi() {
     return cppi;
   }
 }

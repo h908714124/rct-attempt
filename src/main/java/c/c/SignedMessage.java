@@ -4,7 +4,7 @@ import org.bouncycastle.math.ec.ECPoint;
 
 import java.math.BigInteger;
 
-public class SignedMessage {
+public final class SignedMessage {
 
   private final byte[] message;
   private final ECPoint I;
@@ -76,4 +76,3 @@ public class SignedMessage {
     return message;
   }
 }
-

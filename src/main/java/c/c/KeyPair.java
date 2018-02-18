@@ -5,25 +5,25 @@ import org.bouncycastle.math.ec.ECPoint;
 
 import java.math.BigInteger;
 
-public class KeyPair {
+final class KeyPair {
 
   private final ECParameterSpec curve;
 
   // private key
   private final BigInteger x;
 
-  public KeyPair(
+  KeyPair(
       ECParameterSpec curve,
       BigInteger x) {
     this.curve = curve;
     this.x = x;
   }
 
-  public ECPoint publicKey() {
+  ECPoint publicKey() {
     return curve.getG().multiply(x);
   }
 
-  public BigInteger privateKey() {
+  BigInteger privateKey() {
     return x;
   }
 }
